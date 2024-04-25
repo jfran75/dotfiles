@@ -2,8 +2,14 @@
 
 echo "RUNNING dotfiles repo install.sh"
 
+echo "STEP 1: 💾 copying .gitconfig and .gitignore_global"
+cp -r ./git/.gitconfig ~
+cp -r ./git/config ~/.ssh/config
+
+
 # echo "STEP 1: 💾 copying .gitconfig and .gitignore_global"
 # cp -r ./git/.gitconfig ./git/.gitignore_global ~
+DOTFILES_DIR="$HOME/.config/coderv2/dotfiles"
 
 echo "🐚 Shell is $SHELL"
 echo "STEP 2: 💾 copying shell configuration files e.g., bash, zsh"

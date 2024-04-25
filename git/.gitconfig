@@ -1,0 +1,8 @@
+[user]
+	name = Jesus Chinchillas
+	email = jesus.chinchillas@megacable.com.mx
+[core]
+	editor = nvim
+	autocrlf = input
+[pull]
+	rebase = false
