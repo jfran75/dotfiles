@@ -19,7 +19,7 @@ echo "STEP 2: 💾 copying shell configuration files e.g., bash, zsh"
 if [ "$SHELL" == "/bin/bash" ]; then 
   cp ./shell/bash/.bashrc $HOME/.bashrc
   cp ./shell/bash/.bash_profile $HOME/.bash_profile  
-elif [ "$SHELL" == "/bin/zsh" ]; then
+elif [ "$SHELL" == "/usr/bin/zsh" ]; then
   cp ./shell/zsh/.zshrc $HOME/.zshrc
 else
   echo "no unix shell dotfiles copied"
