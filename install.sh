@@ -9,7 +9,8 @@ cp -r ./git/config ~/.ssh/config
 
 # echo "STEP 1: 💾 copying .gitconfig and .gitignore_global"
 # cp -r ./git/.gitconfig ./git/.gitignore_global ~
-DOTFILES_DIR="$HOME/.config/coderv2/dotfiles"
+DOTFILES_PATH="$HOME/.config/coderv2/dotfiles"
+CODER_SERVER_PATH="/tmp/code-server/bin/code-server"
 
 echo "🐚 Shell is $SHELL"
 echo "STEP 2: 💾 copying shell configuration files e.g., bash, zsh"
