@@ -20,3 +20,5 @@ NC='\e[0m'
 # https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
 unset PROMPT_COMMAND
 export PS1="🦈  \W \$ "
+
+# simona
