@@ -109,7 +109,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# ls alias
+ls alias
 alias ll='lsd -lh --group-dirs=first'
 alias l='lsd --group-dirs=first'
 alias la='lsd -lha --group-dirs=first'

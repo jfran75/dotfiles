@@ -76,3 +76,16 @@ NVM_DIR="/home/${USER}/.nvm"
 echo "STEP 5.3: 💾 Settings nvm defaul version to v16.14.2"
 . "$NVM_DIR/nvm.sh" && nvm use v16.14.2
 . "$NVM_DIR/nvm.sh" && nvm alias default v16.14.2
+
+### fzf
+### install and setup fzf key bindings and fuzzy completion
+echo "STEP 5.3: 💾 Installing and setup fzf key bindings and fuzzy completion"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
+
+### install lsd
+cargo install lsd
+
+### cat
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
