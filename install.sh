@@ -26,4 +26,21 @@ else
   echo "no unix shell dotfiles copied"
 fi
 
-echo "STEP 3: 💾 copying VS Code-related config files e.g., settings, keybindings, tasks"
+### install oh-my-zsh
+echo "STEP 3.1: 💾 Installing oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+### install powerlevel10k
+echo "STEP 3.2: 💾 Installing powerlevel10k"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+### install oh-my-zsh PLUGINS
+echo "STEP 3.3: 💾 Installing oh-my-zsh PLUGINS"
+#### zsh-autosuggestions:
+echo "STEP 3.4: 💾 Installing zsh-autosuggestions"
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+#### zsh-syntax-highlighting:
+echo "STEP 3.5: 💾 Installing zsh-syntax-highlighting"
+RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+
