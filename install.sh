@@ -21,6 +21,7 @@ if [ "$SHELL" == "/bin/bash" ]; then
   cp ./shell/bash/.bash_profile $HOME/.bash_profile  
 elif [ "$SHELL" == "/usr/bin/zsh" ]; then
   cp ./shell/zsh/.zshrc $HOME/.zshrc
+  cp ./shell/zsh/.p10k.zsh $HOME/.p10k.zsh
 else
   echo "no unix shell dotfiles copied"
 fi
